@@ -1,6 +1,4 @@
 from fastapi import FastAPI, Response
-
-# I like to launch directly and not use the standard FastAPI startup
 import uvicorn
 
 from resources.students import StudentsResource
@@ -9,6 +7,8 @@ app = FastAPI()
 
 students_resource = StudentsResource()
 
+# RITWIK GOEL 
+# rg3546- Columbia University
 
 @app.get("/")
 async def root():
@@ -17,7 +17,7 @@ async def root():
 
 @app.get("/hello/{name}")
 async def say_hello(name: str):
-    return {"message": f"Awesome cloud developer dff9 says hello {name}"}
+    return {"message": f"Awesome cloud developer (RITWIK) says hello {name}"}
 
 
 @app.get("/hello_text/{name}")
